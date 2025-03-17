@@ -1,0 +1,17 @@
+.founders-say .row {
+    display: flex;
+    justify-content: space-between;  /* Adjusts space between items evenly */
+    gap: 20px;  /* Space between columns */
+    text-align: center;
+}
+
+.founders-say .col {
+    flex: 1 1 calc(33.33% - 20px);  /* Each column takes up 1/3rd of the row minus the gap */
+    box-sizing: border-box;  /* Ensures padding and margins are accounted for in the width */
+}
+
+.founder-img {
+    width: 100%;  /* Makes the image responsive */
+    height: auto;  /* Maintains aspect ratio */
+    border-radius: 10px;  /* Optional: Softens the corners */
+}

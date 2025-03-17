@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dorothy Care</title>
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+
+  <%- include('partials/header') %>
+
+<!-- Welcome Section -->
+<section class="welcome">
+  <div class="container">
+      <div class="text-content">
+          <p class="subheading">Experience the Dorothy Care Difference</p>
+          <h1 class="main-heading">Compassionate In-Home Care</h1>
+          <p class="description">
+              Providing personalized, high-quality care tailored to your loved one's unique needs.  
+              Our dedicated team ensures comfort, dignity, and independence every step of the way.
+          </p>
+          <a href="/book" class="book-now">Schedule a Consultation</a>
+      </div>
+      <div class="image-content">
+          <img src="images/founder1.jpg" alt="Caring caregiver assisting an elderly woman">
+      </div>
+  </div>
+</section>
+
+  <!-- Who We Are Section -->
+  <section class="section who-we-are">
+    <h2>Who We Are</h2>
+    <p id="short-description">
+      At <strong>Dorothy Care</strong>, we are a dedicated and compassionate care agency committed to delivering personalized, high-quality care services. With a focus on families and individuals, our mission is to provide care that is not only professional but also empathetic, ensuring that every client receives the attention and respect they deserve.
+    </p>
+
+    <!-- Full Description -->
+    <p id="full-description" style="display: none;">
+      Our team of experienced caregivers works tirelessly to create customized care plans that address the unique needs of each individual, offering tailored solutions to improve quality of life. We understand that the needs of our clients may vary, and our approach is built on flexibility, trust, and unwavering commitment to the well-being of those we serve.
+      <br><br>
+      At the heart of Dorothy Care is a deep sense of responsibility and compassion, as we believe that every person deserves to be treated with dignity and respect. Our caregivers are highly trained and share a common goal: to provide reliable, nurturing, and professional support to individuals in the comfort of their own homes.
+      <br><br>
+      Dorothy Care stands as a trusted partner in providing peace of mind to families, empowering individuals with the support they need to live comfortably and confidently. We strive to enrich lives through personalized, empathetic care that fosters a sense of security and well-being.
+    </p>
+
+    <!-- Read More / Less Link -->
+    <a href="javascript:void(0)" id="read-more" onclick="toggleReadMore()">Read More</a>
+  </section>
+
+ <!-- Our Caregiving Approach Section -->
+<section class="section exceptional-care">
+  <h2>Our Caregiving Approach</h2>
+  <div class="approach-container">
+    
+    <!-- Exceptional Care -->
+    <div class="approach-item">
+      <img src="images/founder1.jpg" alt="Exceptional Care">
+      <h3>Exceptional Care</h3>
+      <p>Our caregivers consistently deliver unparalleled support, ensuring that each client receives personalized, attentive care that exceeds the highest standards of quality.</p>
+      <button>Explore Services</button>
+    </div>
+
+   <!-- Tailored to Your Needs -->
+<div class="approach-item">
+  <img src="images/founder1.jpg" alt="Tailored to Your Needs">
+  <h3>Tailored to Your Needs</h3>
+  <p>We design personalized care plans that address the unique needs of each individual.</p>
+  <div class="buttons">
+    <a href="/contact" class="btn-consultation">
+      Contact Us
+    </a> <!-- This link will direct users to the contact page -->
+  </div>
+</div>
+
+    <!-- Experienced Caregivers -->
+    <div class="approach-item">
+      <img src="images/founder1.jpg" alt="Experienced Caregivers">
+      <h3>Experienced Caregivers</h3>
+      <p>Our team is comprised of highly trained and experienced professionals who are passionate about care.</p>
+      <button>Learn More</button>
+    </div>
+
+  </div>
+</section>
+  
+  <!-- Founders Section -->
+<section class="section founders">
+  <h2>Meet Our Founders</h2>
+  <div class="founders-container">
+    
+    <!-- Founder 1 -->
+    <div class="founder-item">
+      <img src="/images/founder1.jpg" alt="Founder 1">
+      <h3>Trusted</h3>
+      <h4>Building</h4>
+      <p>At Dorothy Care Agency, we ensure every client receives care with unwavering commitment and integrity.</p>
+      <button>Refer a Friend</button>
+    </div>
+
+    <!-- Founder 2 -->
+    <div class="founder-item">
+      <img src="/images/founder2.jpg" alt="Founder 2">
+      <h3>Compassionate</h3>
+      <h4>Enhancing</h4>
+      <p>We approach every client with empathy and warmth, meeting their unique needs.</p>
+      <button>Book an Appointment</button>
+    </div>
+
+   <!-- Founder 3 -->
+<div class="founder-item">
+  <img src="/images/founder3.jpg" alt="Founder 3">
+  <h3>Enriching Lives</h3>
+  <h4>Embracing</h4>
+  <p>We strive to enhance quality of life by providing not just care, but comfort and peace of mind.</p>
+  <a href="/contact" class="btn-contact-us">Contact Us</a> <!-- This link will direct users to the contact page -->
+</div>
+
+</div>
+</section>
+
+ <!-- Testimonials Section -->
+<section class="section testimonials">
+  <h2>Testimonials from Our Clients</h2>
+  <div class="testimonial-container">
+    <button class="testimonial-prev">&#10094;</button> <!-- Left Arrow -->
+    <div class="testimonial-list">
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <img src="images/founder1.jpg" alt="Founder 1" class="testimonial-img">
+          <div class="testimonial-text">
+            <p>"Dorothy Care has been a blessing for our family. Their attention and care are truly exceptional."</p>
+            <h4>- Client Name</h4>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <img src="images/founder1.jpg" alt="Founder 2" class="testimonial-img">
+          <div class="testimonial-text">
+            <p>"Their personalized approach made a real difference in our lives. Highly recommended!"</p>
+            <h4>- Client Name</h4>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <img src="images/founder1.jpg" alt="Founder 3" class="testimonial-img">
+          <div class="testimonial-text">
+            <p>"I always feel secure and cared for when Dorothy Care is involved."</p>
+            <h4>- Client Name</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="testimonial-next">&#10095;</button> <!-- Right Arrow -->
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>At Dorothy Care Agency, we're dedicated to providing exceptional in-home care services that make a meaningful difference in the lives of our clients and their families.</p>
+    <a href="/contact" class="btn-consultation">Schedule a Consultation</a>
+</section>
+
+  <%- include('partials/footer') %>
+
+  <!-- Link to the JS file -->
+  <script src="/js/main.js"></script>
+  <script>
+    function toggleReadMore() {
+      var fullText = document.getElementById('full-description');
+      var readMoreLink = document.getElementById('read-more');
+      if (fullText.style.display === 'none') {
+        fullText.style.display = 'block';
+        readMoreLink.innerText = 'Read Less';
+      } else {
+        fullText.style.display = 'none';
+        readMoreLink.innerText = 'Read More';
+      }
+    }
+  </script>
+</body>
+</html>

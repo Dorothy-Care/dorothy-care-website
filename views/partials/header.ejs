@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %> - Dorothy Care</title>
+    
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Page-Specific Styles -->
+    <% if (typeof pageStyles !== 'undefined') { %>
+      <link rel="stylesheet" href="/css/<%= pageStyles %>">
+    <% } %>
+  </head>
+
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+          <span>Dorothy Care</span>
+        </div>
+        
+        <!-- NAVIGATION LINKS -->
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          
+          <!-- Dropdown Menu for Services -->
+          <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+              <a href="/services/Personal-Care">Personal Care</a>
+              <a href="/services/Elderly-Care">Elderly Care</a>
+              <a href="/services/companionship">Companionship</a>
+              <a href="/services/Nursing-Care">Nursing Care</a>
+              <a href="/services/Respite-Care">Respite Care</a>
+            </div>
+          </div>
+          
+          <a href="/recruitment">Recruitment</a>
+          <a href="/contact">Contact</a>
+          <a href="/book" class="book-now">Book Now</a>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

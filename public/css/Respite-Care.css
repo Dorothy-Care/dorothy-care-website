@@ -1,0 +1,154 @@
+/* ===================================
+   Respite Care Page - Luxury Design
+=================================== */
+
+/* CSS Variables */
+:root {
+  --primary-color: #5a189a;
+  --secondary-color: #3c096c;
+  --accent-color: #ffb703;
+  --light-bg: #f7f4f9;
+  --dark-text: #2c3e50;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Lora', serif;
+  background: var(--light-bg);
+  color: var(--dark-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  background: url('/images/founder1.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.hero-tagline {
+  font-size: 1.8rem;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #ff9900;
+  transform: scale(1.05);
+}
+
+/* Introduction Section */
+.intro-section {
+  background: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.intro-content h2 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.intro-content p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 20px;
+}
+
+.services-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.service-gallery {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.service-gallery img:hover {
+  transform: translateY(-5px);
+}
+
+.services-content {
+  flex: 0.6;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* CTA Section */
+.cta-section {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 60px;
+  text-align: center;
+}
