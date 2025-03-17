@@ -75,7 +75,7 @@ app.get('/services', (req, res) => {
 // =========================
 app.get('/services/:serviceName', (req, res) => {
   const serviceName = req.params.serviceName.replace(/-/g, ' ').toLowerCase(); // Format to lowercase
-  const fileName = req.params.serviceName.toLowerCase(); // Ensure filename consistency
+  const fileName = req.params.serviceName.replace(/-/g, '-').toLowerCase();
 
   const filePath = path.join(__dirname, 'views', 'services', `${fileName}.ejs`);
 
