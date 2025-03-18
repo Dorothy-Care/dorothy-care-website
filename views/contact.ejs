@@ -1,160 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Dorothy Care</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <%- include('./partials/head', { 
+    title: 'Contact Dorothy Care - Get in Touch', 
+    description: 'Reach out to Dorothy Care for premium elderly care services. We are here to support you with personalized care and professional assistance.', 
+    keywords: 'Dorothy Care, Contact Dorothy Care, Elderly Care, Nursing Services, Senior Assistance, UK Home Care, Professional Caregivers' 
+  }) %>
 </head>
 <body>
 
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        <span>Dorothy Care</span>
-      </div>
-      <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="/contact">Contact</a>
-      </nav>
+  <%- include('./partials/header', { 
+    title: 'Contact Dorothy Care', 
+    pageStyles: 'contact.css' 
+  }) %>
+  
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="container">
+      <h1 class="hero-title">Contact Dorothy Care</h1>
+      <p class="hero-tagline">
+        We're here to provide the support and care you deserve.
+      </p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <div class="contact-container">
-    <h1>Contact Dorothy Care</h1>
-
+<!-- CONTACT FORM SECTION -->
+<section class="contact-form-section">
+  <div class="container">
+    <header class="section-header">
+      <h2>Get in Touch</h2>
+      <p>
+        Have questions or need more information? Fill out the form below and we’ll get back to you promptly.
+      </p>
+    </header>
+    
     <% if (submitted) { %>
       <p class="success-message">Your message has been sent successfully!</p>
     <% } %>
-
+    
     <form action="/contact" method="POST" class="contact-form">
       <div class="form-group">
-        <label>Name:</label>
-        <input type="text" name="name" required />
+        <input type="text" name="name" placeholder="Your Name" required />
       </div>
-
       <div class="form-group">
-        <label>Email:</label>
-        <input type="email" name="email" required />
+        <input type="email" name="email" placeholder="Your Email" required />
       </div>
-
       <div class="form-group">
-        <label>Message:</label>
-        <textarea name="message" required></textarea>
+        <input type="text" name="subject" placeholder="Subject" required />
       </div>
-
-      <button type="submit" class="submit-btn">Send Message</button>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send Message</button>
     </form>
   </div>
+</section>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 Dorothy Care. All Rights Reserved.</p>
-  </footer>
+<!-- CONTACT DETAILS SECTION -->
+<section class="contact-details-section">
+  <div class="container">
+    <div class="details-grid">
+      <div class="detail-item">
+        <i class="icon fas fa-map-marker-alt"></i>
+        <h3>Our Location</h3>
+        <p>123 Care Street, London, UK</p>
+      </div>
+      <div class="detail-item">
+        <i class="icon fas fa-phone-alt"></i>
+        <h3>Call Us</h3>
+        <p>+44 123 456 789</p>
+      </div>
+      <div class="detail-item">
+        <i class="icon fas fa-envelope"></i>
+        <h3>Email Us</h3>
+        <p>info@dorothycare.com</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Link to the JS file -->
-  <script src="/js/main.js"></script>
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Need Assistance?</h2>
+    <p>Reach out today and let us help you with our premium care services.</p>
+    <a href="/services" class="cta-btn">Explore Our Services</a>
+  </div>
+</section>
 
-  <script>
-    function toggleReadMore() {
-      var fullText = document.getElementById('full-description');
-      var readMoreLink = document.getElementById('read-more');
-      
-      // Toggle the display of the text and change the link text
-      if (fullText.style.display === 'none') {
-        fullText.style.display = 'block';
-        readMoreLink.innerText = 'Read Less';
-      } else {
-        fullText.style.display = 'none';
-        readMoreLink.innerText = 'Read More';
-      }
-    }
-  </script>
-
-  <style>
-    /* General Styling */
-    .contact-container {
-      max-width: 600px;
-      margin: 50px auto;
-      padding: 30px;
-      background: #fff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 28px;
-      color: #333;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    .success-message {
-      color: #2d9c2d;
-      background: #eaf7ea;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    /* Form Styling */
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-    }
-
-    .form-group label {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 5px;
-      font-weight: 500;
-    }
-
-    .form-group input,
-    .form-group textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-      transition: 0.3s ease-in-out;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-      border-color: #007bff;
-      outline: none;
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
-    }
-
-    .form-group textarea {
-      height: 120px;
-      resize: none;
-    }
-
-    /* Button Styling */
-    .submit-btn {
-      background: #007bff;
-      color: #fff;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      font-size: 18px;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
-    }
-
-    .submit-btn:hover {
-      background: #0056b3;
-    }
-  </style>
+<%- include('./partials/footer') %>
 
 </body>
 </html>

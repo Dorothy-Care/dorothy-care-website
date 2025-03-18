@@ -1,10 +1,22 @@
-<%- include('partials/header') %>
-<h1>Our Services</h1>
-<ul>
-  <li>Companionship</li>
-  <li>Elderly-Care</li>
-  <li>Nursing-Care</li>
-  <li>Personal-Care</li>
-  <li>Respite-Care</li>
-</ul>
-<%- include('partials/footer') %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head', { 
+    title: 'Our Services', 
+    description: 'Discover Dorothy Care’s professional elderly care services including nursing care, personal care, and respite care.' 
+  }) %>
+</head>
+
+<body>
+  <%- include('partials/header') %>
+
+  <section class="services">
+    <h1>Our Services</h1>
+    <p>We provide premium and personalized care for seniors and healthcare support.</p>
+  </section>
+  
+  <%- include('partials/footer') %>
+</body>
+
+</html>

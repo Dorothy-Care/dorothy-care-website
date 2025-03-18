@@ -11,6 +11,14 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// ✅ Serve sitemap.xml manually
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
+});
+
+// Serve static files from the public directory
+app.use(express.static('public'));
+
 // ✅ Serve static files (CSS, JS, Images)
 app.use(express.static(path.join(__dirname, 'public')));
 

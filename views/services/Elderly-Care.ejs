@@ -1,99 +1,114 @@
-﻿<%- include('../partials/header', { pageStyles: 'Elderly-Care.css' }) %>
+﻿<!DOCTYPE html>
+<html lang="en">
 
-<!-- Hero Section -->
-<section class="hero-section">
-    <div class="hero-background">
-      <div class="hero-overlay">
-        <h1 class="hero-title">Elderly Care Services</h1>
-        <p class="hero-tagline">
-          Compassionate care for a dignified, independent, and enriched life.
+<head>
+  <%- include('../partials/head', { 
+    title: 'Elderly Care - Dorothy Care', 
+    description: 'Dorothy Care provides compassionate and professional elderly care services. Our personalized care plans ensure comfort and well-being for seniors.' 
+  }) %>
+</head>
+
+<body>
+
+  <%- include('../partials/header', { pageStyles: 'Elderly-Care.css' }) %>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+      <div class="hero-background">
+        <div class="hero-overlay">
+          <h1 class="hero-title">Elderly Care Services</h1>
+          <p class="hero-tagline">
+            Compassionate care for a dignified, independent, and enriched life.
+          </p>
+          <a href="#services-details" class="btn btn-primary">Explore Our Services</a>
+        </div>
+      </div>
+  </section>
+  
+  <!-- Introduction Section -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-content">
+        <h2>A New Standard in Elderly Care</h2>
+        <p>
+          At Dorothy Care, we provide personalized support to ensure comfort, security, and enhanced well-being for seniors. Our services combine empathy with professionalism to deliver the highest standard of care.
         </p>
-        <a href="#services-details" class="btn btn-primary">Explore Our Services</a>
       </div>
     </div>
   </section>
-  
-<!-- Introduction Section -->
-<section class="intro-section">
-  <div class="container">
-    <div class="intro-content">
-      <h2>A New Standard in Elderly Care</h2>
-      <p>
-        At Dorothy Care, we provide personalized support to ensure comfort, security, and enhanced well-being for seniors. Our services combine empathy with professionalism to deliver the highest standard of care.
-      </p>
-    </div>
-  </div>
-</section>
 
-<!-- Services Section -->
-<section id="services-details" class="services-section">
-  <div class="container services-wrapper">
+  <!-- Services Section -->
+  <section id="services-details" class="services-section">
+    <div class="container services-wrapper">
 
-    <!-- Image Gallery (Left Side) -->
-    <div class="service-gallery">
-      <img src="/images/founder1.jpg" alt="Caregiver Support" />
-      <img src="/images/founder1.jpg" alt="Elderly Well-being" />
-      <img src="/images/founder1.jpg" alt="Compassionate Care" />
-    </div>
+      <!-- Image Gallery (Left Side) -->
+      <div class="service-gallery">
+        <img src="/images/founder1.jpg" alt="Caregiver Support" />
+        <img src="/images/founder1.jpg" alt="Elderly Well-being" />
+        <img src="/images/founder1.jpg" alt="Compassionate Care" />
+      </div>
 
-    <!-- Services Content (Right Side) -->
-    <div class="services-content">
-      <header class="section-header">
-        <h2>Our Comprehensive Elderly Care Services</h2>
-        <p>
-          Tailored care solutions designed to promote well-being and independence.
-        </p>
-      </header>
-      <div class="services-grid">
-        <article class="service-item">
-          <img src="/images/elderly-care1.jpg" alt="Medication Management" />
-          <h3>Medication Management</h3>
-          <p>We ensure timely medication administration with precise monitoring.</p>
-        </article>
+      <!-- Services Content (Right Side) -->
+      <div class="services-content">
+        <header class="section-header">
+          <h2>Our Comprehensive Elderly Care Services</h2>
+          <p>
+            Tailored care solutions designed to promote well-being and independence.
+          </p>
+        </header>
+        <div class="services-grid">
+          <article class="service-item">
+            <img src="/images/elderly-care1.jpg" alt="Medication Management" />
+            <h3>Medication Management</h3>
+            <p>We ensure timely medication administration with precise monitoring.</p>
+          </article>
 
-        <article class="service-item">
-          <img src="/images/elderly-care2.jpg" alt="Personalized Nutrition Plans" />
-          <h3>Personalized Nutrition Plans</h3>
-          <p>Nutritious meal plans designed for optimal health and vitality.</p>
-        </article>
+          <article class="service-item">
+            <img src="/images/elderly-care2.jpg" alt="Personalized Nutrition Plans" />
+            <h3>Personalized Nutrition Plans</h3>
+            <p>Nutritious meal plans designed for optimal health and vitality.</p>
+          </article>
 
-        <article class="service-item">
-          <img src="/images/elderly-care3.jpg" alt="Mobility Assistance" />
-          <h3>Mobility Assistance</h3>
-          <p>Support for safe movement both indoors and outdoors.</p>
-        </article>
+          <article class="service-item">
+            <img src="/images/elderly-care3.jpg" alt="Mobility Assistance" />
+            <h3>Mobility Assistance</h3>
+            <p>Support for safe movement both indoors and outdoors.</p>
+          </article>
 
-        <article class="service-item">
-          <img src="/images/elderly-care4.jpg" alt="Emotional Support & Companionship" />
-          <h3>Emotional Support & Companionship</h3>
-          <p>Our caregivers provide warmth, understanding, and meaningful conversations.</p>
-        </article>
+          <article class="service-item">
+            <img src="/images/elderly-care4.jpg" alt="Emotional Support & Companionship" />
+            <h3>Emotional Support & Companionship</h3>
+            <p>Our caregivers provide warmth, understanding, and meaningful conversations.</p>
+          </article>
 
-        <article class="service-item">
-          <img src="/images/elderly-care5.jpg" alt="Home Safety Optimization" />
-          <h3>Home Safety Optimization</h3>
-          <p>We ensure your home is adapted to provide a safe, secure environment.</p>
-        </article>
+          <article class="service-item">
+            <img src="/images/elderly-care5.jpg" alt="Home Safety Optimization" />
+            <h3>Home Safety Optimization</h3>
+            <p>We ensure your home is adapted to provide a safe, secure environment.</p>
+          </article>
 
-        <article class="service-item">
-          <img src="/images/elderly-care6.jpg" alt="Specialized Dementia Care" />
-          <h3>Specialized Dementia Care</h3>
-          <p>Tailored support for memory care and cognitive challenges.</p>
-        </article>
+          <article class="service-item">
+            <img src="/images/elderly-care6.jpg" alt="Specialized Dementia Care" />
+            <h3>Specialized Dementia Care</h3>
+            <p>Tailored support for memory care and cognitive challenges.</p>
+          </article>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA Section -->
-<section class="cta-section">
-  <div class="container">
-    <h2>Experience Unmatched Elderly Care</h2>
-    <p>
-      Let our expert caregivers provide you or your loved ones with the care and comfort you deserve.
-    </p>
-    <a href="/contact" class="btn btn-secondary">Contact Us Today</a>
-  </div>
-</section>
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Experience Unmatched Elderly Care</h2>
+      <p>
+        Let our expert caregivers provide you or your loved ones with the care and comfort you deserve.
+      </p>
+      <a href="/contact" class="btn btn-secondary">Contact Us Today</a>
+    </div>
+  </section>
 
-<%- include('../partials/footer') %>
+  <%- include('../partials/footer') %>
+  
+</body>
+</html>

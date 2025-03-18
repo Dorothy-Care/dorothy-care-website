@@ -2,16 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dorothy Care</title>
-
-  <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="/styles.css" />
+  <%- include('partials/head', { 
+    title: 'Home', 
+    description: 'Dorothy Care offers top-quality elderly care and professional caregiving services. We also provide healthcare jobs in the UK, including sponsored roles and shortage occupation jobs.' 
+  }) %>
 </head>
 
 <body>
-
   <%- include('partials/header') %>
 
 <!-- Welcome Section -->

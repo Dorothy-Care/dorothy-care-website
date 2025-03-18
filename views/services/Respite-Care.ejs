@@ -1,6 +1,17 @@
-﻿<%- include('../partials/header', { pageStyles: 'Respite-Care.css' }) %>
+﻿<!DOCTYPE html>
+<html lang="en">
 
-<!-- Hero Section -->
+<head>
+  <%- include('../partials/head', { 
+    title: 'Respite Care Services - Dorothy Care', 
+    description: 'Dorothy Care offers professional respite care services, providing temporary relief and expert care for your loved ones with warmth and compassion.', 
+    keywords: 'Respite Care, Temporary Care, Short-Term Relief, Overnight Stay, Specialized Care, Emotional Support, Flexible Scheduling, Home Comfort, Professional Caregivers, Dorothy Care' 
+  }) %>
+</head>
+
+<%- include('../partials/header', { pageStyles: 'Respite-Care.css' }) %>
+
+<!-- HERO SECTION -->
 <section class="hero-section">
   <div class="hero-overlay">
     <div class="hero-content">
@@ -13,7 +24,7 @@
   </div>
 </section>
 
-<!-- Introduction Section -->
+<!-- INTRODUCTION SECTION -->
 <section class="intro-section">
   <div class="container">
     <div class="intro-content">
@@ -25,18 +36,18 @@
   </div>
 </section>
 
-<!-- Services Section -->
+<!-- SERVICES SECTION -->
 <section id="services-details" class="services-section">
   <div class="container services-wrapper">
 
-    <!-- Image Gallery (Left Side) -->
+    <!-- IMAGE GALLERY (LEFT SIDE) -->
     <div class="service-gallery">
       <img src="/images/founder1.jpg" alt="Professional Caregivers" />
       <img src="/images/founder1.jpg" alt="Temporary Relief" />
       <img src="/images/founder1.jpg" alt="Comfort and Care" />
     </div>
 
-    <!-- Services Content (Right Side) -->
+    <!-- SERVICES CONTENT (RIGHT SIDE) -->
     <div class="services-content">
       <header class="section-header">
         <h2>Comprehensive Respite Care Services</h2>
@@ -85,14 +96,41 @@
   </div>
 </section>
 
-<!-- CTA Section -->
+<!-- TESTIMONIAL SECTION -->
+<section class="testimonial-section">
+  <div class="container">
+    <div class="testimonial-grid">
+      <div class="testimonial-image">
+        <img src="/images/testimonial-elite.jpg" alt="Client Testimonial" />
+      </div>
+      <div class="testimonial-text">
+        <h2>Client Testimonial</h2>
+        <p>
+          "Dorothy Care’s respite care service allowed me to take a much-needed break, knowing my loved one was in expert hands. The professionalism and warmth were truly remarkable."
+        </p>
+        <p class="client-name">— Michael R., Valued Client</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION SECTION -->
 <section class="cta-section">
   <div class="container">
-    <h2>Take a Break With Confidence</h2>
-    <p>
-      Let Dorothy Care provide the support and care your loved one deserves while you recharge.
-    </p>
-    <a href="/contact" class="btn-secondary">Contact Us Today</a>
+    <div class="cta-content">
+      <h2>Take a Break With Confidence</h2>
+      <p>
+        Let Dorothy Care provide the support and care your loved one deserves while you recharge.
+      </p>
+      <a href="/contact" class="btn-secondary">Contact Us Today</a>
+    </div>
+  </div>
+</section>
+
+<!-- BACK TO SERVICES LINK -->
+<section class="back-to-services">
+  <div class="container">
+    <a href="/services" class="back-link">⬅ Back to All Services</a>
   </div>
 </section>
 
