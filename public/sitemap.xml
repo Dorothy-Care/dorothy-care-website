@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://dorothycare.co.uk/</loc>
+    <lastmod>2025-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://dorothycare.co.uk/services</loc>
+    <lastmod>2025-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Elderly Care Page -->
+  <url>
+    <loc>https://dorothycare.co.uk/elderly-care</loc>
+    <lastmod>2025-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Nursing Care Page -->
+  <url>
+    <loc>https://dorothycare.co.uk/nursing-care</loc>
+    <lastmod>2025-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Respite Care Page -->
+  <url>
+    <loc>https://dorothycare.co.uk/respite-care</loc>
+    <lastmod>2025-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://dorothycare.co.uk/contact</loc>
+    <lastmod>2025-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
