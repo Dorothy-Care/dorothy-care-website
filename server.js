@@ -48,19 +48,22 @@ app.post('/contact', async (req, res) => {
 
   try {
     let transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: "smtp.ionos.co.uk", // IONOS SMTP server
+      port: 587, // Use 587 for TLS or 465 for SSL
+      secure: false, // `false` for TLS, `true` for SSL
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+        user: process.env.EMAIL_USER, // Your IONOS email
+        pass: process.env.EMAIL_PASS  // Your IONOS email password
       }
-    });
+    });    
 
     let mailOptions = {
-      from: email,
-      to: "tnkinoti@gmail.com",
+      from: `"Dorothy Care" <info@dorothycare.co.uk>`, // Use your authorized domain email
+      to: "info@dorothycare.co.uk", // Same domain email
+      replyTo: email, // This will allow you to reply to the user directly
       subject: "New Contact Message from Dorothy Care",
       text: `You received a message from:\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    };
+    };    
 
     await transporter.sendMail(mailOptions);
 
