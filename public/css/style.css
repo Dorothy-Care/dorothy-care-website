@@ -27,10 +27,11 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* This ensures everything aligns vertically in the center */
+  align-items: center;
   max-width: 1200px;
   margin: auto;
 }
@@ -43,14 +44,14 @@ header {
 }
 
 .header-logo {
-  width: 85px;         /* Increased size */
-  height: 85px;        /* Increased size */
-  border-radius: 50%;  /* Keeps it circular */
-  object-fit: cover;   /* Ensures proper scaling and cropping */
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .logo span {
-  font-size: 30px;     /* Increased to match the larger logo */
+  font-size: 30px;
   font-weight: 700;
   color: #38755b;
 }
@@ -59,13 +60,13 @@ header {
 .nav-links {
   display: flex;
   gap: 25px;
-  align-items: center; /* Align items (links) vertically in the center */
+  align-items: center;
 }
 
 .nav-links a {
   color: #666;
   font-size: 16px;
-  padding: 14px 20px; /* Consistent padding to align items properly */
+  padding: 14px 20px;
   transition: color 0.3s ease;
 }
 
@@ -73,7 +74,7 @@ header {
   color: #1e3a34;
 }
 
-/* Dropdown Menu Styling */
+/* Dropdown Menu */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -84,15 +85,13 @@ header {
   color: #666;
   background-color: #fff;
   border: none;
-  padding: 14px 20px; /* Adjust padding for consistent vertical alignment */
+  padding: 14px 20px;
   cursor: pointer;
-  position: relative;
   transition: color 0.3s ease;
   display: flex;
-  align-items: center; /* Vertically center the content inside the button */
+  align-items: center;
 }
 
-/* Style for dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -105,7 +104,6 @@ header {
 .dropdown-content a {
   color: #666;
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
   transition: background-color 0.3s ease;
 }
@@ -114,20 +112,17 @@ header {
   background-color: #f1f1f1;
 }
 
-/* Show the dropdown content when hovering over the Services button */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Big pointer for the dropdown */
 .dropbtn::after {
   content: ' ▼';
-  font-size: 20px; /* Bigger pointer size */
+  font-size: 20px;
   margin-left: 8px;
   transition: transform 0.3s ease;
 }
 
-/* Rotate the pointer when the dropdown is open */
 .dropdown:hover .dropbtn::after {
   transform: rotate(180deg);
 }
@@ -135,7 +130,7 @@ header {
 /* Book Now Button */
 .book-now {
   background-color: #1E6857;
-  color: #fff !important; /* Force the text color to be white */
+  color: #fff;
   padding: 12px 25px;
   border-radius: 50px;
   font-weight: bold;
@@ -143,16 +138,168 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover Effect for Book Now Button */
 .book-now:hover {
   background-color: #155247;
   transform: translateY(-2px);
-  color: #fff !important; /* Ensure the text remains white on hover */
 }
 
-.book-now:hover {
-  background-color: #155247;
-  transform: translateY(-2px);
+/* ✅ Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #666;
+  transition: all 0.3s ease;
+}
+
+.nav-links.mobile-active {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 1024px) {
+  .header-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo span {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .book-now {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .book-now {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .header-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ✅ Hamburger Animation */
+.hamburger.active div:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 1024px) {
+  .container {
+    gap: 30px;
+  }
+
+  .text-content {
+    max-width: 100%; /* Allow text to fill more space */
+  }
+
+  .main-heading {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .image-content {
+    max-width: 60%; /* Adjust image size on smaller screens */
+  }
+
+  .image-content img {
+    max-width: 100%; /* Ensure it scales well */
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-content,
+  .image-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subheading {
+    font-size: 16px;
+  }
+
+  .main-heading {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .image-content img {
+    max-width: 100%; /* Make sure it’s not oversized */
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.08);
+  }
 }
 
 /* Welcome Section */
