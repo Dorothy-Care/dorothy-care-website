@@ -131,7 +131,7 @@ header {
 /* ✅ Book Now Button */
 .book-now {
   background-color: #1E6857;
-  color: #fff;
+  color: #fff !important; /* Force white text color */
   padding: 12px 25px;
   border-radius: 50px;
   font-weight: bold;
