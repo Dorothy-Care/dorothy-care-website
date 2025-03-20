@@ -161,7 +161,7 @@ header {
   transition: all 0.3s ease;
 }
 
-/* ✅ Mobile Navigation */
+/* ✅ Mobile Navigation (Left-Aligned) */
 @media (max-width: 768px) {
   .navbar {
     position: relative;
@@ -170,7 +170,7 @@ header {
   .nav-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align items to the left */
     gap: 10px;
     position: absolute;
     top: 70px;
@@ -195,7 +195,7 @@ header {
   .nav-links a {
     padding: 12px;
     font-size: 16px;
-    text-align: center;
+    text-align: left; /* Align text to the left */
     width: 100%; /* Stretch links */
   }
 
@@ -203,7 +203,7 @@ header {
     position: static;
     background-color: #fff;
     box-shadow: none;
-    text-align: center;
+    text-align: left; /* Align dropdown text to the left */
   }
 
   .book-now {
