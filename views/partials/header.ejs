@@ -22,35 +22,41 @@
 
   <body>
     <!-- HEADER SECTION -->
-    <header>
-      <div class="navbar">
-        <!-- Logo on the left -->
-        <div class="logo">
-          <img src="/images/logo.jpg" alt="Dorothy Care Logo" class="header-logo">
-          <span>Dorothy Care</span>
+    <!-- HEADER SECTION -->
+<header>
+  <div class="navbar">
+    <!-- Logo on the left -->
+    <div class="logo">
+      <img src="/images/logo.jpg" alt="Dorothy Care Logo" class="header-logo">
+      <span>Dorothy Care</span>
+    </div>
+    
+    <!-- Hamburger for Mobile -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- NAVIGATION LINKS -->
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      
+      <!-- Dropdown Menu for Services -->
+      <div class="dropdown">
+        <button class="dropbtn">Services</button>
+        <div class="dropdown-content">
+          <a href="/services/Personal-Care">Personal Care</a>
+          <a href="/services/Elderly-Care">Elderly Care</a>
+          <a href="/services/companionship">Companionship</a>
+          <a href="/services/Nursing-Care">Nursing Care</a>
+          <a href="/services/Respite-Care">Respite Care</a>
         </div>
-        
-        <!-- NAVIGATION LINKS -->
-        <nav class="nav-links">
-          <a href="/">Home</a>
-          
-          <!-- Dropdown Menu for Services -->
-          <div class="dropdown">
-            <button class="dropbtn">Services</button>
-            <div class="dropdown-content">
-              <a href="/services/Personal-Care">Personal Care</a>
-              <a href="/services/Elderly-Care">Elderly Care</a>
-              <a href="/services/companionship">Companionship</a>
-              <a href="/services/Nursing-Care">Nursing Care</a>
-              <a href="/services/Respite-Care">Respite Care</a>
-            </div>
-          </div>
-          
-          <a href="/recruitment">Recruitment</a>
-          <a href="/contact">Contact</a>
-          <a href="/book" class="book-now">Book Now</a>
-        </nav>
       </div>
-    </header>
+      
+      <a href="/recruitment">Recruitment</a>
+      <a href="/contact">Contact</a>
+      <a href="/book" class="book-now">Book Now</a>
+    </nav>
+  </div>
+</header>
   </body>
 </html>
