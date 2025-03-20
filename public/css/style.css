@@ -305,7 +305,7 @@ header {
 /* Welcome Section */
 .welcome {
   background-color: #eaf5ec;
-  padding: 100px 20px;
+  padding: 80px 20px; /* Reduced padding */
 }
 
 .container {
@@ -314,7 +314,7 @@ header {
   justify-content: space-between;
   max-width: 1100px;
   margin: auto;
-  gap: 50px;
+  gap: 40px;
 }
 
 /* Text Content */
@@ -332,16 +332,16 @@ header {
 }
 
 .main-heading {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 700;
   color: #1e3a34;
   margin-bottom: 20px;
 }
 
 .description {
-  font-size: 18px;
+  font-size: 16px; /* Slightly smaller for better fit */
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 /* Image Section */
@@ -351,6 +351,7 @@ header {
 
 .image-content img {
   width: 100%;
+  max-width: 450px; /* Limit image size */
   border-radius: 12px;
   box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
@@ -358,6 +359,38 @@ header {
 
 .image-content img:hover {
   transform: scale(1.02);
+}
+
+/* ✅ Mobile Styling */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .text-content {
+    max-width: 100%; /* Full width for text */
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 32px; /* Adjust size for smaller screens */
+  }
+
+  .description {
+    font-size: 14px; /* Scale down for mobile */
+    margin-bottom: 20px;
+  }
+
+  .image-content {
+    width: 100%; /* Let image scale naturally */
+  }
+
+  .image-content img {
+    max-width: 300px; /* Reduce max size for better scaling */
+    margin: 0 auto; /* Center image */
+  }
 }
 
 /* Who We Are Section */
