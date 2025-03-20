@@ -8,6 +8,11 @@ require('dotenv').config();
 
 const app = express();
 
+// Log the static folder being used
+console.log('Static folder:', path.join(__dirname, 'public'));
+
+app.use(express.static(path.join(__dirname, 'public'))); 
+
 // =============================
 // ✅ Multer Storage Configuration
 // =============================
