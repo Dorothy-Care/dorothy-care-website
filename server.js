@@ -38,6 +38,11 @@ app.set('views', path.join(__dirname, 'views'));
 // ✅ Serve static files (CSS, JS, Images)
 app.use(express.static('public'));
 
+app.use((req, res, next) => {
+  console.log('Request for:', req.url); // Log every incoming request
+  next();
+});
+
 // =============================
 // ✅ Serve Sitemap.xml
 // =============================
