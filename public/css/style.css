@@ -239,6 +239,7 @@ header {
   gap: 30px;
   max-width: 1200px;
   margin: auto;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 .approach-item {
@@ -249,6 +250,7 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: transform 0.3s ease;
+  max-width: 320px;
 }
 
 .approach-item:hover {
@@ -291,6 +293,56 @@ header {
 .approach-item button:hover,
 .approach-item a.btn-consultation:hover {
   background-color: #b3d6b1;
+}
+
+/* ✅ Mobile Responsive Fixes */
+@media (max-width: 1024px) {
+  .approach-container {
+    gap: 20px; /* Reduce gap on smaller screens */
+  }
+
+  .approach-item {
+    flex: 1 1 calc(50% - 20px); /* Show 2 items per row on tablets */
+    padding: 25px;
+  }
+
+  .approach-item h3 {
+    font-size: 20px;
+  }
+
+  .approach-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .approach-container {
+    gap: 15px;
+  }
+
+  .approach-item {
+    flex: 1 1 100%; /* Show 1 item per row on mobile */
+    padding: 20px;
+  }
+
+  .approach-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .approach-item h3 {
+    font-size: 18px;
+  }
+
+  .approach-item p {
+    font-size: 14px;
+  }
+
+  .approach-item button,
+  .approach-item a.btn-consultation {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
 }
 
 /* Founders Section */
