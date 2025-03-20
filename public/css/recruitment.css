@@ -1,0 +1,116 @@
+/* Recruitment Hero */
+.recruitment-hero {
+    background: #eaf5ec;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .recruitment-hero h1 {
+    font-size: 42px;
+    color: #215c4a;
+    margin-bottom: 10px;
+  }
+  
+  .recruitment-hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Job Listings */
+  .job-listings {
+    padding: 60px 20px;
+    background-color: #f9fafb;
+  }
+  
+  .job-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+  }
+  
+  .job-card h3 {
+    font-size: 24px;
+    color: #215c4a;
+  }
+  
+  .job-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .btn-apply {
+    background-color: #38755b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-apply:hover {
+    background-color: #2e6047;
+  }
+  
+  /* Why Work With Us */
+.why-work-with-us {
+    padding: 60px 20px;
+    background-color: #eaf5ec;
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+  }
+  
+  .why-work-with-us .container {
+    max-width: 1100px; /* Set a max width for consistency */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .why-work-with-us h2 {
+    font-size: 36px;
+    color: #215c4a;
+    margin-bottom: 20px;
+  }
+  
+  .why-work-with-us ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .why-work-with-us ul li {
+    font-size: 18px;
+    color: #555;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .why-work-with-us ul li::before {
+    content: '✔'; /* Add a checkmark before each item */
+    color: #38755b;
+    font-weight: bold;
+    margin-right: 10px;
+  }  
+  
+  /* Apply Now Section */
+  .apply-now {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #215c4a;
+    color: #fff;
+  }
+  
+  .apply-now h2 {
+    font-size: 36px;
+  }
+  
+  .apply-now .btn-primary {
+    background-color: #fff;
+    color: #215c4a;
+  }
+  
+  .apply-now .btn-primary:hover {
+    background-color: #f7fcf7;
+  }
+  

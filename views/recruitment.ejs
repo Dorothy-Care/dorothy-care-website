@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %> - Dorothy Care</title>
+    
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/<%= pageStyles %>">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <%- include('partials/header') %>
+
+    <!-- Recruitment Hero -->
+    <section class="recruitment-hero">
+      <div class="container">
+        <h1>Join Our Compassionate Team at Dorothy Care</h1>
+        <p>We’re looking for dedicated caregivers to make a real difference in people’s lives.</p>
+        <a href="#job-listings" class="btn-primary">Explore Open Positions</a>
+      </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section id="job-listings" class="job-listings">
+      <div class="container">
+        <h2>Current Openings</h2>
+
+        <div class="job-card">
+          <h3>Home Care Assistant</h3>
+          <p><strong>Location:</strong> London, UK</p>
+          <p><strong>Type:</strong> Full-Time</p>
+          <p>
+            We are seeking a passionate Home Care Assistant to provide personal care, companionship, and daily assistance to our clients.
+          </p>
+          <a href="/apply" class="btn-apply">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+          <h3>Live-In Carer</h3>
+          <p><strong>Location:</strong> Manchester, UK</p>
+          <p><strong>Type:</strong> Full-Time</p>
+          <p>
+            As a Live-In Carer, you'll stay with the client and help with daily activities, medication, and emotional support.
+          </p>
+          <a href="/apply" class="btn-apply">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+          <h3>Personal Caregiver</h3>
+          <p><strong>Location:</strong> Birmingham, UK</p>
+          <p><strong>Type:</strong> Part-Time</p>
+          <p>
+            Help our clients with personal care, meal preparation, and light housekeeping while providing emotional support.
+          </p>
+          <a href="/apply" class="btn-apply">Apply Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="why-work-with-us">
+      <div class="container">
+        <h2>Why Work With Dorothy Care?</h2>
+        <ul>
+          <li>✅ Flexible schedules to fit your lifestyle</li>
+          <li>✅ Competitive pay and benefits</li>
+          <li>✅ Supportive team and professional training</li>
+          <li>✅ Make a meaningful impact on people’s lives</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section class="apply-now">
+      <div class="container">
+        <h2>Ready to Join Our Team?</h2>
+        <a href="/apply" class="btn-primary">Apply Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+  </body>
+</html>

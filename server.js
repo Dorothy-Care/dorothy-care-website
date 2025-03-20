@@ -33,6 +33,13 @@ app.get('/', (req, res) => {
 });
 
 // =========================
+// ✅ Recruitment
+// =========================
+app.get('/recruitment', (req, res) => {
+  res.render('recruitment', { title: 'Recruitment', pageStyles: 'recruitment.css' });
+});
+
+// =========================
 // ✅ Contact Page
 // =========================
 app.get('/contact', (req, res) => {
